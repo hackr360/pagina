@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Bleh">
+    <meta name="author" content="Siewdass Sf">
+    <link rel="icon" href="images/icono.ico">
+    <title>Bleh</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Diseño -->
+    <link href="css/diseño.css" rel="stylesheet">
+
+    <!-- Paleta & Pruebas -->
+    <link href="css/paleta.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--Barra de navegacion-->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-inner">
+
+			<!--Logo-->
+			<a class="navbar-brand hidden-xs" href="#">
+				<img src="images/logo2.png">
+			</a>
+			<a class="navbar-brand visible-xs" href="#">
+				<img src="images/logo.png">
+			</a>
+			<!--Logo-->
+
+			<!--Buscador-->
+			<form class="col-xs-5 navbar-form navbar-left">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Buscar...">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+					</span>
+				</div>
+			</form>
+			<!--Buscador-->
+
+			<!--Usuario-->
+			<div class="pull-right">
+
+				<div class="navbar-form navbar-right hidden-sm hidden-xs">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Cuenta" type="text">
+                        <input class="form-control" placeholder="Contraseña" type="text">
+                    </div>
+                    <button type="submit" class="btn btn-default">Entrar</button>
+                </div>
+
+				<div class="dropdown visible-sm visible-xs">
+ 					<a type="button" class="btn btn-default navbar-btn" type="button" id="dropdownMenu1" data-toggle="dropdown"><i class="fa fa-user"></i><span class="hidden-xs"> Entrar</span></a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						<li>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <form class="form">
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputEmail2">Cuenta</label>
+                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Cuenta" required>
+                                    </div>
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña" required>
+                                    </div>
+                                    <div class="form-group">
+                                       <button type="submit" class="btn btn-success btn-block">Entrar</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </li>
+					</ul>
+				</div>
+			</div>
+			<!--Usuario-->
+			
+		</div>
+	</div>
+</nav>
+<!--Barra de navegacion-->
+
+<!-- Carrusel -->		
+<div class="container-fluid">
+	<div class="row">
+
+		<div class="col-md-12">
+            <div class="carrusel">
+                <div id="carrusel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carrusel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    	<div class="item active">
+							<div class="col-md-4">
+								<h1 class="text-center">Google Nexus 6</h1>
+								<p class="text-center">Pantalla: 5.96 2560x1440 AMOLED</p>
+								<p class="text-center">Bateria: 3220mAh</p>
+								<p class="text-center">Camara: 13MP - 2MP</p>
+								<p class="text-center">CPU: Snapdragon Quad Core 2.7GHz</p>
+								<p class="text-center">GPU: Adreno 420</p>
+								<p class="text-center">Almacenamiento: 32 GB - 64 GB</p>
+							</div>
+							<div class="col-md-8">
+								<img src="images/nexus1.jpg" class="img-responsive">
+							</div>
+                   		</div>
+                        <div class="item">
+							<div class="col-md-4">
+								<h1 class="text-center">Google Nexus 6</h1>
+								<p class="text-center">Pantall: 5.96 2560x1440 AMOLED</p>
+								<p class="text-center">Bateria: 3220mAh</p>
+								<p class="text-center">Camara: 13MP - 2MP</p>
+								<p class="text-center">CPU: Snapdragon Quad Core 2.7GHz</p>
+								<p class="text-center">GPU: Adreno 420</p>
+								<p class="text-center">Almacenamiento: 32 GB - 64 GB</p>
+							</div>
+							<div class="col-md-8">
+								<img src="images/nexus1.jpg" class="img-responsive">
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<!-- Carrusel -->
+
+	</div>
+</div>
+
+<!-- Productos -->
+<div class="container-fluid">
+    <div class="row">
+    	<div class="col-md-12">
+			<h2 class="title text-center">Productos</h2>
+   		</div>
+
+		<!-- Categorias -->
+    	<div class="col-md-3 col-sm-3">
+			<div class="panel-group" id="acordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#acordion" href="#tecnologia">
+								<span class="button pull-right"><i class="fa fa-plus"></i></span>
+								Tecnologia
+							</a>
+						</h4>
+					</div>
+					<div id="tecnologia" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+								<li><a href="#">Telefonos</a></li>
+								<li><a href="#">Tabletas</a></li>
+								<li><a href="#">Computadoras</a></li>
+								<li><a href="#">Laptops</a></li>
+								<li><a href="#">Camaras</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#acordion" href="#ropa">
+								<span class="button pull-right"><i class="fa fa-plus"></i></span>
+								Ropa
+							</a>
+						</h4>
+					</div>
+					<div id="ropa" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+								<li><a href="#">Camisas</a></li>
+								<li><a href="#">Pantalones</a></li>
+								<li><a href="#">Medias</a></li>
+								<li><a href="#">Gorras</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel-heading">
+						<h4 class="panel-title"><a href="#">Otros</a></h4>
+					</div>
+				</div>
+    		</div>
+    	</div>
+    	<!-- Categorias -->
+
+		<div class="col-md-9 col-sm-9">
+			<div class="row">
+
+				<!-- Productos -->
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<a href="#"><img src="images/nexus2.jpg"></a>
+						<h4 class="text-center">Google Nexus 6</h4>
+						<div class="detalles">
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">Bs. 25.999</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<a href="#"><img src="images/nexus2.jpg"></a>
+						<h4 class="text-center">Google Nexus 6</h4>
+						<div class="detalles">
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">Bs. 25.999</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<a href="#"><img src="images/nexus2.jpg"></a>
+						<h4 class="text-center">Google Nexus 6</h4>
+						<div class="detalles">
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">Bs. 25.999</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<a href="#"><img src="images/nexus2.jpg"></a>
+						<h4 class="text-center">Google Nexus 6</h4>
+						<div class="detalles">
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">Bs. 25.999</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<a href="#"><img src="images/nexus2.jpg"></a>
+						<h4 class="text-center">Google Nexus 6</h4>
+						<div class="detalles">
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">Bs. 25.999</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<a href="#"><img src="images/nexus2.jpg"></a>
+						<h4 class="text-center">Google Nexus 6</h4>
+						<div class="detalles">
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">Bs. 25.999</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<a href="#"><img src="images/nexus2.jpg"></a>
+						<h4 class="text-center">Google Nexus 6</h4>
+						<div class="detalles">
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">Bs. 25.999</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<a href="#"><img src="images/nexus2.jpg"></a>
+						<h4 class="text-center">Google Nexus 6</h4>
+						<div class="detalles">
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">Bs. 25.999</p>
+						</div>
+					</div>
+				</div>
+				<!-- Productos -->
+
+				<!-- Paginado -->
+				<div class="text-center">
+      			  	<ul class="pagination">
+            			<li><a href="#"><i class="fa fa-angle-up"></i></a></li>
+            			<li><a href="#"><i class="fa fa-angle-down"></i></a></li>
+      				</ul>
+     		   	</div>
+				<!-- Paginado -->
+
+
+				<!-- Recomendados -->
+				<div>
+				<h2 class="title2 text-center">Recomendados</h2>
+				</div>
+				<div class="carousel slide" data-ride="carousel">
+
+					<div class="carousel-inner recomendados">
+						<div class="item active">	
+
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href="#"><img src="images/nexus2.jpg"></a>
+									<h4 class="text-center">Google Nexus 6</h4>
+									<div class="detalles">
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">Bs. 25.999</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href="#"><img src="images/nexus2.jpg"></a>
+									<h4 class="text-center">Google Nexus 6</h4>
+									<div class="detalles">
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">Bs. 25.999</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href="#"><img src="images/nexus2.jpg"></a>
+									<h4 class="text-center">Google Nexus 6</h4>
+									<div class="detalles">
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">Bs. 25.999</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href="#"><img src="images/nexus2.jpg"></a>
+									<h4 class="text-center">Google Nexus 6</h4>
+									<div class="detalles">
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">Bs. 25.999</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="item">	
+
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href="#"><img src="images/nexus2.jpg"></a>
+									<h4 class="text-center">Google Nexus 6</h4>
+									<div class="detalles">
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">Bs. 25.999</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href="#"><img src="images/nexus2.jpg"></a>
+									<h4 class="text-center">Google Nexus 6</h4>
+									<div class="detalles">
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">Bs. 25.999</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href="#"><img src="images/nexus2.jpg"></a>
+									<h4 class="text-center">Google Nexus 6</h4>
+									<div class="detalles">
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">Bs. 25.999</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href="#"><img src="images/nexus2.jpg"></a>
+									<h4 class="text-center">Google Nexus 6</h4>
+									<div class="detalles">
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">Bs. 25.999</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Recomendados -->
+
+	
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Productos -->
+
+<!-- Servicios -->
+<div class="container-fluid">
+    <div class="row">
+    	<div class="col-md-12">
+			<h2 class="title text-center medio">Servicios</h2>
+   		</div>
+
+		<!-- Categorias -->
+    	<div class="col-md-3 col-sm-3">
+			<div class="panel-group" id="acordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#acordion" href="#tecnico">
+								<span class="button pull-right"><i class="fa fa-plus"></i></span>
+								Tecnico
+							</a>
+						</h4>
+					</div>
+					<div id="tecnico" class="panel-collapse collapse">
+						<div class="panel-body">
+							<ul>
+								<li><a href="#">Computacion</a></li>
+								<li><a href="#">Electricista</a></li>
+								<li><a href="#">Fontanero</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel-heading">
+						<h4 class="panel-title"><a href="#">Otros</a></h4>
+					</div>
+				</div>
+    		</div>
+    	</div>
+    	<!-- Categorias -->
+
+		<div class="col-md-9 col-sm-9">
+			<div class="row">
+
+				<!-- Servicios -->
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<h4 class="text-center">Sistemas C.A</h4>
+						<div class="detalles">
+							<p class="text-center">7am-6pm/Sab.-Dom.</p>
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">0416-1234567</p>
+							<p class="text-center">J-12345678-9</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<h4 class="text-center">Sistemas C.A</h4>
+						<div class="detalles">
+							<p class="text-center">7am-6pm/Sab.-Dom.</p>
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">0416-1234567</p>
+							<p class="text-center">J-12345678-9</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<h4 class="text-center">Sistemas C.A</h4>
+						<div class="detalles">
+							<p class="text-center">7am-6pm/Sab.-Dom.</p>
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">0416-1234567</p>
+							<p class="text-center">J-12345678-9</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<h4 class="text-center">Sistemas C.A</h4>
+						<div class="detalles">
+							<p class="text-center">7am-6pm/Sab.-Dom.</p>
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">0416-1234567</p>
+							<p class="text-center">J-12345678-9</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<h4 class="text-center">Sistemas C.A</h4>
+						<div class="detalles">
+							<p class="text-center">7am-6pm/Sab.-Dom.</p>
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">0416-1234567</p>
+							<p class="text-center">J-12345678-9</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<h4 class="text-center">Sistemas C.A</h4>
+						<div class="detalles">
+							<p class="text-center">7am-6pm/Sab.-Dom.</p>
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">0416-1234567</p>
+							<p class="text-center">J-12345678-9</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<h4 class="text-center">Sistemas C.A</h4>
+						<div class="detalles">
+							<p class="text-center">7am-6pm/Sab.-Dom.</p>
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">0416-1234567</p>
+							<p class="text-center">J-12345678-9</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<h4 class="text-center">Sistemas C.A</h4>
+						<div class="detalles">
+							<p class="text-center">7am-6pm/Sab.-Dom.</p>
+							<p class="text-center">Miranda/Cua</p>
+							<p class="text-center">0416-1234567</p>
+							<p class="text-center">J-12345678-9</p>
+						</div>
+					</div>
+				</div>
+				<!-- Servicios -->
+
+				<!-- Paginado -->
+				<div class="text-center">
+      			  	<ul class="pagination">
+            			<li><a href="#"><i class="fa fa-angle-up"></i></a></li>
+            			<li><a href="#"><i class="fa fa-angle-down"></i></a></li>
+      				</ul>
+     		   	</div>
+				<!-- Paginado -->
+
+
+				<!-- Recomendados -->
+				<h2 class="title2 text-center largo">Recomendados</h2>
+				<div class="carousel slide" data-ride="carousel">
+
+					<div class="carousel-inner recomendados">
+						<div class="item active">	
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<h4 class="text-center">Sistemas C.A</h4>
+									<div class="detalles">
+										<p class="text-center">7am-6pm/Sab.-Dom.</p>
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">0416-1234567</p>
+										<p class="text-center">J-12345678-9</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<h4 class="text-center">Sistemas C.A</h4>
+									<div class="detalles">
+										<p class="text-center">7am-6pm/Sab.-Dom.</p>
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">0416-1234567</p>
+										<p class="text-center">J-12345678-9</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<h4 class="text-center">Sistemas C.A</h4>
+									<div class="detalles">
+										<p class="text-center">7am-6pm/Sab.-Dom.</p>
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">0416-1234567</p>
+										<p class="text-center">J-12345678-9</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<h4 class="text-center">Sistemas C.A</h4>
+									<div class="detalles">
+										<p class="text-center">7am-6pm/Sab.-Dom.</p>
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">0416-1234567</p>
+										<p class="text-center">J-12345678-9</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="item">	
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<h4 class="text-center">Sistemas C.A</h4>
+									<div class="detalles">
+										<p class="text-center">7am-6pm/Sab.-Dom.</p>
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">0416-1234567</p>
+										<p class="text-center">J-12345678-9</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<h4 class="text-center">Sistemas C.A</h4>
+									<div class="detalles">
+										<p class="text-center">7am-6pm/Sab.-Dom.</p>
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">0416-1234567</p>
+										<p class="text-center">J-12345678-9</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<h4 class="text-center">Sistemas C.A</h4>
+									<div class="detalles">
+										<p class="text-center">7am-6pm/Sab.-Dom.</p>
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">0416-1234567</p>
+										<p class="text-center">J-12345678-9</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<h4 class="text-center">Sistemas C.A</h4>
+									<div class="detalles">
+										<p class="text-center">7am-6pm/Sab.-Dom.</p>
+										<p class="text-center">Miranda/Cua</p>
+										<p class="text-center">0416-1234567</p>
+										<p class="text-center">J-12345678-9</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Recomendados -->
+
+	
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Servicios -->
+
+<!-- Pie -->
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+
+            <div class="col-md-4 col-sm-4">
+                <div class="text-center">
+                    <h4><i class="fa fa-search"></i> Busca</h4>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="text-center">
+                    <h4><i class="fa fa-files-o"></i> Compara</h4>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="text-center">
+                	<h4><i class="fa fa-street-view"></i> Encuentra</h4>
+                	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div>
+            </div>
+
+        </div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+
+           	<li>
+            	<a href="#">Terminos y condiciones</a>
+            	<a class="separador-vertical"></a>
+				<a href="#">Politica de privacidad</a>
+				<a class="separador-vertical"></a>
+				<a href="#">Informacion</a>
+				<a class="separador-vertical"></a>
+				<a href="#">Ayuda</a>
+			</li>
+
+        </div>
+	</div>
+</footer>
+<!-- Pie -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/diseño.js"></script>
+
+</body>
+</html>
